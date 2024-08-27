@@ -1,0 +1,155 @@
+
+
+<div class="grid-container">
+
+  <!-- menu lateral -->
+  <div class="item1">
+    <ul class="list-group">
+      <li class="list-group-item active"[ngClass]="{'active': fullstack}"  (click)="cambiarVista('fullstack');marcarClick('fullstack')">fullstack</li>
+      <li class="list-group-item" [ngClass]="{'active': javascript}" (click)="cambiarVista('javascript');marcarClick('javascript')">javascript</li>
+      <li class="list-group-item" [ngClass]="{'active': animaciones}" (click)="cambiarVista('animaciones');marcarClick('animaciones')">animaciones</li>
+      <li class="list-group-item" [ngClass]="{'active': maquetacion}" (click)="cambiarVista('maquetacion');marcarClick('maquetaciones')">maquetaciones</li>
+    </ul>
+  </div>  
+  <!-- fin menu lateral -->  
+
+  <!-- contenedor de vistas -->
+  <div class="item2">
+    <div *ngIf="mensajeEleccion  && idioma === 'spanish'" class="panel">
+      <p >Elige una categoría en el panel de la izquierda</p>
+      <i class="fi-arrow-left"></i>
+    </div>
+    <div *ngIf="mensajeEleccion  && idioma === ''" class="panel">
+      <p >Elige una categoría en el panel de la izquierda</p>
+      <i class="fi-arrow-left"></i>
+    </div>
+    <div *ngIf="mensajeEleccion  && idioma === 'english'" class="panel">
+      <p>Choose a category from the left panel</p>
+      <i class="fi-arrow-left"></i> 
+    </div>
+    <!-- vista fullstack-->
+    <div *ngIf="fullstack">
+      <h4>proyectos fullstack </h4>
+      <div class="row small-12 text-center">
+        <div class="progreso small-12 text-center parrafo-lindo">
+          <p *ngIf="idioma === 'spanish'"> <b>visitante:</b> En esta sección encontraras una pequeña muestra de <b> 3 </b> proyectos, los cuales realice de manera completa desde el front hasta el back, usando angular, node, express,mongoose, mongodb y demas librerias como jsonwebtoken, etc.  
+          </p>
+          <p *ngIf="idioma === ''"> <b>visitante:</b> En esta sección encontraras una pequeña muestra de <b> 3 </b> proyectos, los cuales realice de manera completa desde el front hasta el back, usando angular, node, express,mongoose, mongodb y demas librerias como jsonwebtoken, etc.  
+          </p>
+          <p *ngIf="idioma === 'english'">
+            <b>Visitor:</b> In this section, you will find a small showcase of <b>3</b> projects that I completed from front to back, using Angular, Node, Express, Mongoose, MongoDB, and other libraries such as JSON Web Token, etc.
+          </p>
+        </div> 
+        <!-- cada proyecto item-->
+        <div class="item-blog animacion-4 column medium-4" *ngFor="let proyect of arrayFullstack">
+          <div class="contenedor-imagen-animacion">
+            <img  [src]="proyect.imagen"  class="imagen-animacion4" alt="" width="300">
+          </div>
+          
+          <div class="description-item4">
+            <p>{{proyect.nombre}}<br>  <a [href]="proyect.url" (click)="marcarClick( proyect.nombre)" target="_blank">
+                ver</a>
+            </p> 
+          </div>
+        </div>
+        <!-- fin cada proyecto item -->
+      </div>
+    </div>
+    <!-- fin vista fullstack -->
+
+    <!-- vista javascript-->
+    <div *ngIf="javascript">
+      <h4>proyectos javascript </h4>
+      <div class="row small-12 text-center">
+        <div class="progreso small-12 text-center parrafo-lindo">
+          <p *ngIf="idioma === 'spanish'"> <b>visitante:</b> En esta sección encontraras una pequeña muestra de <b> 6 </b> ejercicios que cree y  que realice de manera completa con javascript nativo.  
+          </p>
+          <p *ngIf="idioma === ''"> <b>visitante:</b> En esta sección encontraras una pequeña muestra de <b> 6 </b> ejercicios que cree y  que realice de manera completa con javascript nativo.  
+          </p>
+          <p *ngIf="idioma === 'english'">
+            <b>Visitor:</b> In this section, you will find a small showcase of <b>6</b> exercises that I created and completed entirely using native JavaScript.
+          </p>
+        </div> 
+        <!-- cada proyecto item-->
+        <div class="item-blog animacion-4 column medium-4" *ngFor="let proyect of arrayJavascript">
+          <div class="contenedor-imagen-animacion">
+            <img  [src]="proyect.imagen"  class="imagen-animacion4" alt="" width="300">
+          </div>
+          
+          <div class="description-item4">
+            <p>{{proyect.nombre}}<br>  <a [href]="proyect.url" (click)="marcarClick(proyect.nombre)" target="_blank">
+                ver</a>
+            </p> 
+          </div>
+        </div>
+        <!-- fin cada proyecto item -->
+      </div>
+    </div>
+    <!-- fin vista javascript -->
+
+    <!-- vista maquetacion-->
+    <div *ngIf="maquetacion">
+      <h4>proyectos maquetacion </h4>
+      <div class="row small-12 text-center">
+        <div class="progreso small-12 text-center parrafo-lindo">
+          <p *ngIf="idioma === 'spanish'"> <b>visitante:</b> En esta sección encontraras una pequeña muestra de <b> 3 </b> proyectos maquetacion que realice de manera completa. 
+          </p>
+          <p *ngIf="idioma === ''"> <b>visitante:</b> En esta sección encontraras una pequeña muestra de <b> 3 </b> proyectos maquetacion que realice de manera completa. 
+          </p>
+          <p *ngIf="idioma === 'english'">
+            <b>Visitor:</b> In this section, you will find a small showcase of <b>3</b> complete layout projects that I have created.
+          </p>
+        </div> 
+        <!-- cada proyecto item-->
+        <div class="item-blog animacion-4 column medium-4" *ngFor="let proyect of arrayMaquetacion">
+          <div class="contenedor-imagen-animacion">
+            
+          </div>
+          <img  [src]="proyect.imagen"  class="imagen-animacion4" alt="" width="300">
+          <div class="description-item4">
+            <p>{{proyect.nombre}}<br>  <a [href]="proyect.url" (click)="marcarClick( proyect.nombre)" target="_blank">
+                ver</a>
+            </p> 
+          </div>
+        </div>
+        <!-- fin cada proyecto item -->
+      </div>
+    </div>
+    <!-- fin vista maquetacion -->
+
+    <!-- vista animaciones-->
+    <div *ngIf="animaciones">
+      <h4>proyectos animaciones </h4>
+      <div class="row small-12 text-center">
+        <div class="progreso small-12 text-center parrafo-lindo">
+          <p *ngIf="idioma === 'spanish'"> <b>visitante:</b> En esta sección encontraras una pequeña muestra de  animaciones  que e construido con una finalidad de práctica.  
+          </p>
+          <p *ngIf="idioma === ''"> <b>visitante:</b> En esta sección encontraras una pequeña muestra de  animaciones  que e construido con una finalidad de práctica.  
+          </p>
+          <p *ngIf="idioma === 'english'">
+            <b>Visitor:</b> In this section, you will find a small showcase of animations that I have built for practice purposes.
+          </p>
+        </div> 
+        <!-- cada proyecto item-->
+        <div class="item-blog animacion-4 column medium-4" *ngFor="let proyect of arrayAnimaciones">
+          <div class="contenedor-imagen-animacion">
+            <img  [src]="proyect.imagen"  class="imagen-animacion4" alt="" width="300">
+          </div>
+          
+          <div class="description-item4">
+            <p>{{proyect.nombre}}<br>  <a [href]="proyect.url" (click)="marcarClick(proyect.nombre)" target="_blank">
+                ver</a>
+            </p> 
+          </div>
+        </div>
+        <!-- fin cada proyecto item -->
+      </div>
+    </div>
+    <!-- fin vista animaciones -->
+    <div *ngIf="animaciones"><h4> algunas animaciones que hice</h4></div>
+    <div *ngIf="javascript"><h4>  algunas cosas que cree en javascript para practicar</h4></div>
+    <div *ngIf="maquetacion"> <h4>algunas maquetaciones quue hice</h4></div>
+  <div >
+   <!-- fin contenedor de vistas -->  
+
+</div>

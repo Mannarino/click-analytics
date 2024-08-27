@@ -1,0 +1,42 @@
+.user-info-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #e7e7e7;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    color: #444;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  div.clicks {
+    margin-top: 15px;
+  }
+  

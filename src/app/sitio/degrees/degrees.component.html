@@ -1,0 +1,31 @@
+
+<!-- Contenido de Estudios -->    
+
+    <div class="row">
+      <div class="colum medium-6">
+          <ul>
+            <li>  
+              <h3>Carreras </h3>
+            </li>
+            <li *ngFor="let carrera of carreras" (click)="marcarClick(carrera.title)">{{carrera.title}} - <a href="{{carrera.url}}" target="_blank" >ver</a></li>
+            
+             <br>
+             <br>
+             <li>- Licentiatura en psicología, en la Universidad Calotica de Santa fe, 44 materias aprobadas,todas  las materias aprobadas, (falto la mitad de las practicas profesionales y la tesina).
+            </li>
+          </ul>
+        </div>
+      <div class="colum medium-6">
+          <ul>
+            <li> 
+              <h3>Cursos</h3>
+            </li>
+            <li *ngFor="let curso of cursos" (click)="marcarClick(curso.title)">{{curso.title}} - <a href="{{curso.url}}" target="_blank" >ver</a></li>
+           
+            <li> <b>nota:</b> hice otros cursos de otras tecnologias como php, maquetacion etc, pero puse aca los revelantes que hice relacionados a javascript, angular y node.js
+            </li>
+          </ul>
+      </div>
+    </div>
+ 
+  <!-- /Contenido de Estudios -->

@@ -1,0 +1,8 @@
+:host{
+	align-self: center;
+	justify-self: center;
+	height: 100%;
+	display: grid;
+	padding: 30px;
+	max-width: 600px;
+}

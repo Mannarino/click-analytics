@@ -1,0 +1,92 @@
+
+<!-- Botones de github-correo-linkedin parte superior -->
+<div class="row contenedor-iconos-sociales-arriba text-center align-center ">
+    <form [formGroup]="form" class="radio-group">
+      <img src="assets/eeuu.png" alt=""> &nbsp;
+      <input type="radio" id="english" formControlName="selectedLanguage" value="english">
+      <label for="english">English</label>
+  
+      <input type="radio" id="spanish" formControlName="selectedLanguage" value="spanish">
+      <label for="spanish">Español</label><img src="assets/argentina.png" alt="">
+    </form>
+  </div>
+  <!-- /Botones de github-correo-linkedin parte superior -->
+  
+  <!-- Animaciones y presentacion -->
+  <section  [class.animacion-home-desaparecer]="aplicarAnimacion"  id="animacionesYpresentacion"  >
+    <div class="row"> 
+      <div class="column small-12 large-3 text-center nombre-moises">
+        <p  *ngIf="!ocultar" >Moises Mannarino</p>
+        <span class="label secondary front" *ngIf="!ocultar"  >Backend Developer</span>
+        <span class="label secondary front" *ngIf="!ocultar"  >Angular Developer</span>
+        <span class="label secondary front" *ngIf="!ocultar" >FullStack MEAN Developer</span>
+      </div>
+      <div class="column small-6 medium-3 large-offset-3">
+        <div class="row text-center small-12 show-for-large">
+          <div class="column small-12 animacion-home" *ngIf="!ocultar">  
+            <img  class="animar-imagen-1" src="assets/node.png">
+            <img class="animar-imagen-2" src="assets/mongo-db.png">
+            <img class="animar-imagen-3" src="assets/angular.jpg">
+            <img class="animar-imagen-1" src="assets/javascript.webp">
+            <span class="shadow"></span>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+  <!-- /Animaciones y presentacion -->
+  
+  <!-- Menu y botones -->
+  <section class="marketing-site-three-up">
+    <div class="row medium-unstack align-spaced" >
+      <ul class="tabs" data-tabs id="para-tabs">
+        <li class="tabs-title"  routerLink="/sitio/about-me" routerLinkActive="active">
+          <div class="columns"(click)="ocultarElementos();marcarClick('about-me')"  >
+            <a >
+              <img src="assets/engranajes.svg">
+              <h4 *ngIf="idioma === 'spanish'" class="marketing-site-three-up-title">Acerca de mi</h4>
+              <h4 *ngIf="idioma === 'english'" class="marketing-site-three-up-title">About me</h4>
+            </a>
+          </div>
+        </li>
+        <li class="tabs-title" routerLink="/contact" routerLinkActive="active">
+          
+        </li>
+        <li class="tabs-title" id="estudios-menu" routerLink="/sitio/degrees"routerLinkActive="active">
+          <div class="columns"(click)="ocultarElementos();marcarClick('studies')" >
+            <a  >
+              <img src="assets/graduacion-de-la-universidad.svg">
+              <h4 *ngIf="idioma === 'spanish'" class="marketing-site-three-up-title">Estudios</h4>
+              <h4 *ngIf="idioma === 'english'" class="marketing-site-three-up-title">studies</h4>
+            </a>
+          </div>
+        </li>
+        <li class="tabs-title" id="portafolio-meni" routerLink="/sitio/proyects" routerLinkActive="active">
+          <div class="columns" (click)="ocultarElementos();marcarClick('some-proyects')" >
+            <a >
+              <img src="assets/portafolio-carpeta-abierta-llena.svg">
+              <h4  *ngIf="idioma === 'spanish'"class="marketing-site-three-up-title">algunos proyectos</h4>
+              <h4 *ngIf="idioma === 'english'" class="marketing-site-three-up-title">some proyects</h4>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- /Menu y botones -->
+  
+   <!-- Contenedor de tabs -->
+   <div class="tabs-content row" data-tabs-content="para-tabs">
+      <router-outlet></router-outlet>
+   </div>
+   <!-- /Contenedor de tabs --> 
+  
+    <!-- Footer -->
+      <div class="row text-center"> 
+        <footer>
+            <p *ngIf="idioma === 'spanish'"> - Desarrollado por Moisés Mannarino - </p>
+            <p *ngIf="idioma === 'english'"> - Developed by Moisés Mannarino - </p>
+        </footer>
+      </div>  
+    <!-- /Footer --> 
