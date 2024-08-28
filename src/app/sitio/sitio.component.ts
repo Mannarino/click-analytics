@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup,Validators } from '@angular/forms';
 import { Router} from '@angular/router';
 import { IdiomaService } from '../services/idioma.service';
-import { IpinfoService } from '../services/ipinfo.service';
+
 import { VisitsService } from '../services/visits.service';
 
 @Component({
@@ -21,22 +21,14 @@ export class SitioComponent implements OnInit {
   idioma = 'spanish'
   constructor(private idiomaService:IdiomaService, 
               private router: Router, 
-              private visitsService:VisitsService,
-              private ipInfoService:IpinfoService
+              private visitsService:VisitsService
               ) 
   { }
 
   ngOnInit(): void {
    
     
-   //registrar visita y usuario
-   this.visitsService.prueba()
-   this.visitsService.registrarVisita()
-   this.ipInfoService.getIPINFO()
-   setTimeout(() => {
-    this.visitsService.registrarUsuario()
-   }, 3000);
-   //-----
+   
 
     if(localStorage.getItem('idioma'))
     {

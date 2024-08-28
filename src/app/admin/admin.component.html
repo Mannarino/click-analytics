@@ -1,26 +1,23 @@
 
-<div class="user-info-container" *ngIf="sessionData">
-    <h2>Datos del Usuario</h2>
-    <p><strong>País:</strong> {{ sessionData.userData.country }}</p>
-    <p><strong>Ciudad:</strong> {{ sessionData.userData.city }}</p>
-    <p><strong>Región:</strong> {{ sessionData.userData.region }}</p>
+<div *ngFor="let user of sessionData">
+ 
+  <p>ID de Usuario: {{ user.user.userId }}</p>
   
-    <h2>Visitas</h2>
+  <div *ngIf="user.clicks.length > 0; else noClicks">
+    <h4>Clics Registrados:</h4>
     <ul>
-        <li *ngFor="let visit of sessionData.visits; let i = index">
-            {{ i + 1 }}. {{ visit | date: 'fullDate' }}
-          </li>
+      <li *ngFor="let click of user.clicks">
+        Página: {{ click.click }} <br>
+        Fecha: {{ click.clickedAt | date:'medium' }} <!-- Formato de fecha -->
+      </li>
     </ul>
-  
-    <h2>Clics</h2>
-    <div *ngFor="let click of sessionData.clicks | keyvalue">
-      <h3>{{ click.key }}</h3>
-      <p><strong>Total de clics:</strong> {{ click.value.count }}</p>
-      <ul>
-        <li *ngFor="let timestamp of click.value.timestamps">
-          {{ timestamp }}
-        </li>
-      </ul>
-    </div>
   </div>
+  
+  <ng-template #noClicks>
+    <p>Este usuario no tiene clics registrados.</p>
+  </ng-template>
+
+  <hr>
+</div>
+
   

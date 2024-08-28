@@ -33,6 +33,7 @@ export class LoginComponent implements OnInit {
     this.loginService.loginUser(this.form.value)
     .subscribe( (value) => {
       this.form.reset()
+      
       localStorage.setItem('auth','true')
       this.imgCargando = false
       

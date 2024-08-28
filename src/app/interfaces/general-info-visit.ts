@@ -1,26 +1,22 @@
-export interface ipInfoVisit {
-    country: string;
-    city: string;
-    region: string;
+export interface Click {
+  clickId: string;
+  userId: string;
+  fecha: string;  // Podrías cambiar esto a `Date` si necesitas manipularlo como fecha
+  page: string;   // La página donde se realizó el clic
 }
-export interface UserData {
-    country: string;
-    city: string;
-    region: string;
-  }
-  
-  export   interface ClickData {
-    count: number;
-    timestamps: string[];
-  }
-  
-  export   interface SessionData {
-    userData: UserData;
-    visits: string[];
-    clicks: { [key: string]: ClickData };
-  }
-  
-  export   interface SessionResponse {
-    success: boolean;
-    data: SessionData;
-  }
+
+export interface User {
+  userId: string;
+  name: string;
+  email: string;
+  clicks: Click[];  // Una lista de clics asociados a este usuario
+}
+
+export interface UserWithClicks {
+  users: User[];
+}
+
+export interface LoginResponse {
+  message: string;
+  token: string;
+}
