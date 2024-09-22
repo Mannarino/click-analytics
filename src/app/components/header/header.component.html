@@ -3,10 +3,10 @@
 <div class="row contenedor-iconos-sociales-arriba text-center align-center ">
     <form [formGroup]="form" class="radio-group">
       <img src="assets/eeuu.png" alt=""> &nbsp;
-      <input type="radio" id="english" formControlName="selectedLanguage" value="english">
+      <input type="radio" id="english" formControlName="selectedLanguage" value="en">
       <label for="english">English</label>
   
-      <input type="radio" id="spanish" formControlName="selectedLanguage" value="spanish">
+      <input type="radio" id="spanish" formControlName="selectedLanguage" value="es">
       <label for="spanish">Español</label><img src="assets/argentina.png" alt="">
     </form>
   </div>
@@ -41,33 +41,33 @@
   <section class="marketing-site-three-up">
     <div class="row medium-unstack align-spaced" >
       <ul class="tabs" data-tabs id="para-tabs">
-        <li class="tabs-title"  routerLink="/sitio/about-me" routerLinkActive="active">
+        <li class="tabs-title"  routerLink="/about-me" routerLinkActive="active">
           <div class="columns"(click)="ocultarElementos();marcarClick('about-me')"  >
             <a >
               <img src="assets/engranajes.svg">
-              <h4 *ngIf="idioma === 'spanish'" class="marketing-site-three-up-title">Acerca de mi</h4>
-              <h4 *ngIf="idioma === 'english'" class="marketing-site-three-up-title">About me</h4>
+              <h4  class="marketing-site-three-up-title">{{ 'menu.about' | translate }}</h4>
+              
             </a>
           </div>
         </li>
         <li class="tabs-title" routerLink="/contact" routerLinkActive="active">
           
         </li>
-        <li class="tabs-title" id="estudios-menu" routerLink="/sitio/degrees"routerLinkActive="active">
+        <li class="tabs-title" id="estudios-menu" routerLink="/degrees"routerLinkActive="active">
           <div class="columns"(click)="ocultarElementos();marcarClick('studies')" >
             <a  >
               <img src="assets/graduacion-de-la-universidad.svg">
-              <h4 *ngIf="idioma === 'spanish'" class="marketing-site-three-up-title">Estudios</h4>
-              <h4 *ngIf="idioma === 'english'" class="marketing-site-three-up-title">studies</h4>
+              <h4  class="marketing-site-three-up-title">{{ 'menu.studies' | translate }}</h4>
+              
             </a>
           </div>
         </li>
-        <li class="tabs-title" id="portafolio-meni" routerLink="/sitio/proyects" routerLinkActive="active">
+        <li class="tabs-title" id="portafolio-meni" routerLink="/proyectos" routerLinkActive="active">
           <div class="columns" (click)="ocultarElementos();marcarClick('some-proyects')" >
             <a >
               <img src="assets/portafolio-carpeta-abierta-llena.svg">
-              <h4  *ngIf="idioma === 'spanish'"class="marketing-site-three-up-title">algunos proyectos</h4>
-              <h4 *ngIf="idioma === 'english'" class="marketing-site-three-up-title">some proyects</h4>
+              <h4  class="marketing-site-three-up-title">{{ 'menu.projects' | translate }}</h4>
+              
             </a>
           </div>
         </li>
@@ -76,17 +76,4 @@
   </section>
   <!-- /Menu y botones -->
   
-   <!-- Contenedor de tabs -->
-   <div class="tabs-content row" data-tabs-content="para-tabs">
-      <router-outlet></router-outlet>
-   </div>
-   <!-- /Contenedor de tabs --> 
-  
-    <!-- Footer -->
-      <div class="row text-center"> 
-        <footer>
-            <p *ngIf="idioma === 'spanish'"> - Desarrollado por Moisés Mannarino - </p>
-            <p *ngIf="idioma === 'english'"> - Developed by Moisés Mannarino - </p>
-        </footer>
-      </div>  
-    <!-- /Footer --> 
+ 

@@ -1,0 +1,95 @@
+
+    [
+      {
+        "imagen": "./assets/fullstack/almacen.jpg",
+        "categoria": "angular",
+        "nombre": "almacen",
+        "url": "https://api-rest-full-del-almacen.onrender.com/home"
+      },
+      {
+        "imagen": "./assets/fullstack/andromeda.jpg",
+        "categoria": "angular",
+        "nombre": "andromeda",
+        "url": "https://wondrous-tartufo-bf4b69.netlify.app/"
+      },
+      {
+        "imagen": "./assets/fullstack/chat.jpg",
+        "categoria": "angular",
+        "nombre": "chat",
+        "url": "https://64a0aea5de745172697c6e2c--vermillion-khapse-c87f23.netlify.app/"
+      },
+      {
+        "imagen": "./assets/javascript/incognita.jpg",
+        "categoria": "javascript",
+        "nombre": "incognita",
+        "url": "https://mannarino.github.io/juego-javascript/"
+      },
+      {
+        "imagen": "./assets/javascript/nodos.jpg",
+        "categoria": "javascript",
+        "nombre": "nodos",
+        "url": "https://mannarino.github.io/proyecto-dom-nodos/"
+      },
+      {
+        "imagen": "./assets/javascript/comunicacion.jpg",
+        "categoria": "javascript",
+        "nombre": "comunicacion",
+        "url": "https://mannarino.github.io/comunicacion-con-el-servidor/"
+      },
+      {
+        "imagen": "./assets/javascript/jerarquia.jpg",
+        "categoria": "javascript",
+        "nombre": "jerarquia",
+        "url": "https://mannarino.github.io/jerarquia-of-objects/"
+      },
+      {
+        "imagen": "./assets/javascript/localstorage.jpg",
+        "categoria": "javascript",
+        "nombre": "localstorage",
+        "url": "https://mannarino.github.io/aplicacion-localstorage/"
+      },
+      {
+        "imagen": "./assets/javascript/simpson.jpg",
+        "categoria": "javascript",
+        "nombre": "simpson",
+        "url": "https://mannarino.github.io/arraySimpson/"
+      },
+      {
+        "imagen": "./assets/maquetacion/uno.jpg",
+        "categoria": "maquetacion",
+        "nombre": "uno",
+        "url": "https://mannarino.github.io/sitioResponsive2/"
+      },
+      {
+        "imagen": "./assets/maquetacion/dos.jpg",
+        "categoria": "maquetacion",
+        "nombre": "dos",
+        "url": "https://mannarino.github.io/foundation-web/"
+      },
+      {
+        "imagen": "./assets/maquetacion/tres.jpg",
+        "categoria": "maquetacion",
+        "nombre": "tres",
+        "url": "http://mannarino.github.io/SitioResponsive/"
+      },
+      {
+        "imagen": "./assets/animaciones/uno.jpg",
+        "categoria": "animaciones",
+        "nombre": "uno",
+        "url": "https://mannarino.github.io/animacionescss/"
+      },
+      {
+        "imagen": "./assets/animaciones/dos.jpg",
+        "categoria": "animaciones",
+        "nombre": "dos",
+        "url": "https://mannarino.github.io/animacioneshover/"
+      },
+      {
+        "imagen": "./assets/animaciones/tres.jpg",
+        "categoria": "animaciones",
+        "nombre": "tres",
+        "url": "https://mannarino.github.io/ejercicio-transiciones-responsivas/"
+      }
+    ]
+  
+  

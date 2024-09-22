@@ -1,0 +1,44 @@
+{
+    "aboutMe": {
+      "name": "My name is Moisés Mannarino, and I graduated as a Higher Technician in Systems Analysis from the Virasoro Institute of Higher Informatics.",
+      "specialization": "I specialize in the MEAN stack and believe I have a strong overall level of JavaScript. I am also proficient in the Angular framework on the frontend and Node.js with Express.js on the backend, along with MongoDB as the database.",
+      "skills": "I also have expertise in web design, web animations, and can build a complete application from frontend to backend, including communication between the different parts, logic, and software structure.",
+      "languages": "I also have advanced written English skills, allowing me to read books, articles, and tutorials in English. I can engage in real-time written conversations in English through chat, although I am not fluent in spoken English.",
+      "otherTechnologies": "In the past, I have also studied, taken courses, and worked with other technologies such as PHP, MySQL, React.js, Vue.js, WordPress, and more.",
+      "quote": "I only know one way to do things: do them well!",
+      "profiles": {
+        "title": "Get to know my profiles",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "platzi": "Platzi",
+        "educacionIT": "Educación IT"
+      }
+    },
+    "studies": {
+      "courses":  "courses",
+      "career": "Career",
+      "psychology": "Bachelor's degree in Psychology from the Catholic University of Santa Fe, 44 subjects passed."
+    },
+    "home": {
+      "labels": {
+        "backend": "Backend Developer",
+        "angular": "Angular Developer",
+        "fullstack": "FullStack MEAN Developer"
+      },
+      "animations": {
+        "node": "assets/node.png",
+        "mongo": "assets/mongo-db.png",
+        "angular": "assets/angular.jpg",
+        "javascript": "assets/javascript.webp"
+      }
+    },
+    "footer": {
+      "developedBy": "- Developed by Moisés Mannarino -"
+    },
+    "menu": {
+      "about": "About me",
+      "studies": "Studies",
+      "projects": "Some projects"
+    }
+  }
+  

@@ -1,0 +1,24 @@
+.animacion-home-desaparecer {
+    -webkit-animation: reducirAltura 2.3s ;
+    animation: reducirAltura 2.3s ; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes reducirAltura {
+    from {
+      height: 100%;
+    }
+    to {
+      height: 0;
+      padding: 0px;
+    }
+  }
+
+  @-webkit-keyframes reducirAltura {
+    from {
+      height: 100%;
+    }
+    to {
+      height: 0;
+    }
+  }  

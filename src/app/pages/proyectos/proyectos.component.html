@@ -1,0 +1,36 @@
+
+
+  <div class="grid-container">
+
+ 
+    <!-- Contenido de Portfolio -->
+    
+    
+     <div class="row small-12 text-center">
+       <div class="progreso small-12 text-center parrafo-lindo">
+         <p> <b>visitante:</b> En esta sección encontraras una pequeña muestra de <b> 47 </b> de los sitios web y módulos de aplicaciones que e construido con una finalidad de práctica.  
+         </p>
+       </div> 
+       <div  *ngFor="let proyecto of proyectos"  class="item-blog small-12 animacion-4 column medium-4">
+         <div class="contenedor-imagen-animacion">
+           <img [src]="proyecto.imagen" [alt]="proyecto.nombre" class="imagen-animacion4" alt="" width="300">
+         </div>
+         
+         
+         <div class="description-item4">
+           <p>{{ proyecto.nombre }}<br>  
+            <a [href]="proyecto.url" target="_blank" class="proyecto-link">
+                Ver Proyecto
+              </a>
+           </p> 
+           <div class="autor">
+             <p>
+               <img src="assets/icom.jpg" alt="" > <span>categoría: <b>{{ proyecto.categoria }}</b></span>
+             </p>
+           </div>
+         </div>
+       </div>
+       
+       
+       
+ </div>  

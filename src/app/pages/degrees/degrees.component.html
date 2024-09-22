@@ -5,20 +5,21 @@
       <div class="colum medium-6">
           <ul>
             <li>  
-              <h3>Carreras </h3>
+              <h3>{{ 'studies.career' | translate }} </h3>
             </li>
             <li *ngFor="let carrera of carreras" (click)="marcarClick(carrera.title)">{{carrera.title}} - <a href="{{carrera.url}}" target="_blank" >ver</a></li>
             
              <br>
              <br>
-             <li>- Licentiatura en psicología, en la Universidad Calotica de Santa fe, 44 materias aprobadas,todas  las materias aprobadas, (falto la mitad de las practicas profesionales y la tesina).
+             <li>{{ 'studies.psychology' | translate }}
             </li>
           </ul>
         </div>
       <div class="colum medium-6">
           <ul>
             <li> 
-              <h3>Cursos</h3>
+              <h3>{{ 'studies.courses' | translate }} </h3>
+              
             </li>
             <li *ngFor="let curso of cursos" (click)="marcarClick(curso.title)">{{curso.title}} - <a href="{{curso.url}}" target="_blank" >ver</a></li>
            

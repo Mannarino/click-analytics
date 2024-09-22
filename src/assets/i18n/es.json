@@ -1,0 +1,44 @@
+{
+    "aboutMe": {
+      "name": "Mi nombre es Moisés Mannarino, me recibí de <b> Técnico Superior en Análisis de Sistemas </b>en el Instituto Superior de Informática Virasoro.",
+      "specialization": "Me especialicé en el stack MEAN, creo tener muy buen nivel de JavaScript en general, también manejo el framework Angular, y del lado del backend, Node.js y Express.js, con bases de datos MongoDB.",
+      "skills": "También sé de maquetación, animaciones web, puedo construir una aplicación completa, desde el frontend hasta el backend, la comunicación entre las partes, la lógica, la estructura del software, etc.",
+      "languages": "También domino el inglés escrito en gran nivel, pudiendo leer libros, artículos, tutoriales en inglés, y tener charlas en vivo y en directo a través de chat escrito en inglés, aunque no hablando.",
+      "otherTechnologies": "En el pasado, también estudié, hice cursos y trabajé con otras tecnologías como PHP, MySQL, React.js, Vue.js, WordPress, entre otros.",
+      "quote": "solo conozco una manera de hacer las cosas: hacerlas bien!",
+      "profiles": {
+        "title": "Conoce mis perfiles",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "platzi": "Platzi",
+        "educacionIT": "Educación IT"
+      }
+    },
+    "studies": {
+      "courses": "cursos",
+      "career": "Carreras",
+      "psychology": "Licenciatura en Psicología, en la Universidad Católica de Santa Fe, 44 materias aprobadas."
+    },
+    "home": {
+      "labels": {
+        "backend": "Backend Developer",
+        "angular": "Angular Developer",
+        "fullstack": "FullStack MEAN Developer"
+      },
+      "animations": {
+        "node": "assets/node.png",
+        "mongo": "assets/mongo-db.png",
+        "angular": "assets/angular.jpg",
+        "javascript": "assets/javascript.webp"
+      }
+    },
+    "footer": {
+      "developedBy": "- Desarrollado por Moisés Mannarino -"
+    },
+    "menu": {
+      "about": "Acerca de mi",
+      "studies": "Estudios",
+      "projects": "Algunos proyectos"
+    }
+  }
+  

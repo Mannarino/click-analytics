@@ -1,0 +1,93 @@
+:host{width: 100%;
+      
+}
+.grid-container {
+    display: grid;
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  
+  *, :after, :before {
+     box-sizing: border-box!important;
+}
+  
+  /* Consulta de medios para pantallas menores a 770px */
+@media (max-width: 770px) {
+  .grid-container {
+    grid-template-columns: 100%; /* Cada elemento ocupa el 100% */
+  }
+}
+
+.item-blog {
+  height: 420px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border: 3px;
+  border-color: #ebebeb;
+  border-style: solid;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos dentro del item-blog se alineen en columna */
+  justify-content: space-between; /* Si quieres distribuir el contenido dentro de la caja */
+  
+}
+  .item-blog p {
+    margin-top: 0px; }
+  .item-blog .texto-central {
+    position: relative;
+    top: -30px;
+    opacity: 0; }
+  .item-blog .description-item4 {
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    -webkit-transition: 2s;
+    transition: 2s; }
+    .item-blog .description-item4 p a {
+      font-weight: bold;
+      font-size: 22px; }
+    .item-blog .description-item4 .autor {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 13px;
+      border-top: 1px solid gray;
+      padding-top: 5px; }
+      .item-blog .description-item4 .autor img {
+        border-radius: 50%;
+        vertical-align: middle;
+        height: 35px;
+        width: 35px;
+        margin-right: 5px; }
+      .item-blog .description-item4 .autor p {
+        margin: 0; }
+
+/* /cajita que contiene cada proyecto*/
+/* animacion en cajita que contiene cada proyecto*/
+.contenedor-imagen-animacion {
+  height: 200px; }
+  .contenedor-imagen-animacion .imagen-animacion4 {
+    width: 100%;
+    height: auto;
+    -webkit-transition: 1.3s;
+    transition: 1.3s;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  .contenedor-imagen-animacion .animacion-4:hover .imagen-animacion4 {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  .contenedor-imagen-animacion .animacion-4:hover .description-item4 {
+    opacity: 1; }
+  .contenedor-imagen-animacion .animacion-4:hover .texto-central {
+    opacity: 0; }
+
+/* /animacion en cajita que contiene cada proyecto*/
